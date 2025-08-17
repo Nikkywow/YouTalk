@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTalk - Блог о психологии</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container header__container">
+        <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="YouTalk" class="logo__img">
+        </a>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Статьи</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <button class="button button--primary">Записаться</button>
+
+        <button class="menu-button">
+            <svg class="menu-button__icon">
+                <use xlink:href="icons/sprite.svg#menu"></use>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero">
+        <div class="container hero__container">
+            <h1 class="hero__title">Психология для жизни</h1>
+            <p class="hero__text">Практические советы от профессиональных психологов</p>
+            <a href="#" class="button button--secondary">Читать статьи</a>
+        </div>
+    </section>
+
+    <section class="articles">
+        <div class="container">
+            <h2 class="section-title">Последние статьи</h2>
+
+            <div class="tags">
+                <button class="tags__item tags__item--active">Все</button>
+                <button class="tags__item">Отношения</button>
+                <button class="tags__item">Самопомощь</button>
+                <button class="tags__item">Стресс</button>
+                <button class="tags__item">Карьера</button>
+            </div>
+
+            <div class="articles-grid">
+                <article class="article-card">
+                    <img src="img/article1.jpg" alt="Как справляться с тревогой" class="article-card__img">
+                    <div class="article-card__content">
+                        <span class="article-card__category">Самопомощь</span>
+                        <h3 class="article-card__title">Как справляться с тревогой: 5 практических техник</h3>
+                        <p class="article-card__excerpt">Простые методы, которые помогут успокоиться в стрессовой ситуации...</p>
+                        <a href="article.html" class="article-card__link">Читать</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="articles__more">
+                <button class="button button--outline">Показать еще</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__col">
+                <h3 class="footer__title">Навигация</h3>
+                <ul class="footer__nav">
+                    <li><a href="#" class="footer__link">Главная</a></li>
+                    <li><a href="#" class="footer__link">Статьи</a></li>
+                    <li><a href="#" class="footer__link">О нас</a></li>
+                    <li><a href="#" class="footer__link">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h3 class="footer__title">Подписаться</h3>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" class="subscribe-form__input">
+                    <button type="submit" class="button button--primary">ОК</button>
+                </form>
+            </div>
+
+            <div class="footer__col">
+                <h3 class="footer__title">Контакты</h3>
+                <address class="footer__contacts">
+                    <a href="mailto:hello@youtalk.ru" class="footer__contact">
+                        <svg class="footer__contact-icon">
+                            <use xlink:href="icons/sprite.svg#email"></use>
+                        </svg>
+                        hello@youtalk.ru
+                    </a>
+                    <a href="tel:+78001234567" class="footer__contact">
+                        <svg class="footer__contact-icon">
+                            <use xlink:href="icons/sprite.svg#phone"></use>
+                        </svg>
+                        8 (800) 123-45-67
+                    </a>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copyright">© 2023 YouTalk. Все права защищены.</p>
+            <div class="footer__legal">
+                <a href="#" class="footer__legal-link">Политика конфиденциальности</a>
+                <a href="#" class="footer__legal-link">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
